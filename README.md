@@ -30,3 +30,24 @@ Returns a human readable version of the elapsed time. Works while running.
 
 ### Stopwatch.setListener(listenerFunction)
 Sets the listener of the stopwatch. The `listenerFunction` will be called each time `resolution` milliseconds have elapsed.
+
+### new Racer()
+Instantiates a new Racer object.
+
+### Racer.start()
+Starts the specified Racer.
+
+### Racer.stop()
+Stops the Racer, returns its time, then resets its time.
+
+### new Race(array)
+Instantiates a new Race, which takes in an array of Racer objects.
+
+### Race.start()
+Starts all the Racer objects in the Race.
+
+### Race.getWinner()
+Returns the Racer object with the shortest time.
+
+## Corner Cases
+* If the .getWinner() method is called on Race when there are still Racers running, the .getWinner() method will return the first Racer that was stopped. If no Racers are stopped, then the .getWinner() simply returns the first Racer object in the Race array. 
