@@ -1,4 +1,4 @@
-var Stopwatch = function(listener, resolution) {
+var Stopwatch = function(resolution, listener) {
   this.startTime = 0;
   this.stopTime = 0;
   this.totalElapsed = 0; // elapsed number of ms in total
